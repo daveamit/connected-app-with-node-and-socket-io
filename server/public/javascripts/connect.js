@@ -1,0 +1,4 @@
+var socket = io.connect('http://localhost:3000');
+socket.on('welcome',function (message) {
+  $('#greet').html(message);
+})
