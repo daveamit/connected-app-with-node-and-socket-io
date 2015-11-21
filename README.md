@@ -19,3 +19,28 @@ it involves quite a bit of improvisation from the materials, sites, blogs and
 endless videos I have referred.
 
 This project is part of a blog at [Odd Code](https://oddcode.daveamit.com)
+
+## How to get started
+First of all you'll have to clone the repository using
+
+    git clone git@github.com:daveamit/connected-app-with-node-and-socket-io.git
+
+once the cloning is done go to "connected-app-with-node-and-socket-io/server" folder and run
+node, npm, bower must be there before you can run following command. [here](https://docs.npmjs.com/getting-started/installing-node) is a nice video / artical showing how to install node. Once node is installed you can install bower globally using following command
+    npm install -g bower
+  This will install bower globally, which will enable you to run it as a command from anywhere. Depending on your installation of node, you might need to add 'sudo' like 'sudo npm install -g bower'. Lets install all npm dependencies now to do so execute following command 
+  
+    cd connected-app-with-node-and-socket-io/server && npm install
+
+This should install all the dependencies. Now you cd in the public folder (i.e. server/public) and install bower
+
+    cd public && bower install
+
+Thats it! You are ready to rock and roll. If you are planning to play with it, you might also want to install 'nodemon' which detects file change and automatically restarts the node app. nodemon can be install from following command line
+
+    sudo npm install -g nodemon
+
+once its installed, just go to 'server' folder and type in
+
+    nodemon
+and you are good to go. Fire-up any browser and visit http://localhost:3000 to witness the magic.
