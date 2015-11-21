@@ -15,7 +15,7 @@ a pain the [DONKEY]. With this project I'll attempt to introduce an approach usi
 socket.io to maintain states which would be faster, realtime and hopefully more
 friendly. I do not claim to have invented any of these "idea" of using socket.io
 to maintain states on this server, this is just my attempt to address this problem;
-it involves a quite a bit of improvisation from the materials, sites, blogs and
+it involves quite a bit of improvisation from the materials, sites, blogs and
 endless videos I have referred.
 
 This project is part of a blog at [Odd Code](https://oddcode.daveamit.com)
