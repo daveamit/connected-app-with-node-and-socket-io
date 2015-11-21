@@ -11,6 +11,12 @@ var users = require('./routes/users');
 
 var app = express();
 
+//Create an http server from express app
+var server = require('http').Server(app);
+//Pass the http server to socket.io so that it can map the routes and do the magic
+app.server = server;
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', exphbs({defaultLayout: 'single', extname: '.hbs'}));
